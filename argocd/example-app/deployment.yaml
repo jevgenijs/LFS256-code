@@ -3,6 +3,7 @@ kind: Deployment
 metadata:
   name: argocd-example-app
 spec:
+  namespace: default
   replicas: 2 # You can adjust the number of replicas
   selector:
     matchLabels:
